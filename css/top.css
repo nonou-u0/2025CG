@@ -1,0 +1,15 @@
+.albm {
+  text-align: center;
+}
+
+.albm img{
+  width: 20vw;
+  height: auto;
+  margin: 8px;
+}
+
+.albm img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  transition: 0.3s;
+}
