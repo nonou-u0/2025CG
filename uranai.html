@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptを使った簡単な色占い</title>
+
+	<script>
+ 	function tasu() {
+    const arr = ["赤","青","ピンク","みどり","むらさき","オレンジ","きいろ","ラベンダー","ベージュ"];
+    const input = document.getElementById("a").value; 
+		if(!input){
+			document.getElementById("kotae").value = "日付を入力してね";
+			return;
+		}
+
+    const idx = Math.floor(Math.random()*arr.length);
+    document.getElementById("kotae").value = arr[idx];
+ 	}
+	</script>
+</head>
+
+<body>
+<h1>色占い</h1>
+  <form>
+    日付 = <input type="date" id="a"> <br>
+    <input type="button" onclick="tasu()" value="占う"> <br>
+    結果 = <input type="text" id="kotae" readonly>
+  </form>
+</body>
+</html>
